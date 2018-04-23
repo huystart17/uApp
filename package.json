@@ -22,10 +22,14 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
+    "mocha": "mocha test/ --recursive --exit",
     "test": "npm run eslint && npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node server/",
-    "mocha": "mocha test/ --recursive --exit"
+    "dev": "npm run build-dev & nodemon ./server",
+    "production": "npm run build-production & nodemon ./src",
+    "build-dev": "webpack -w client/index.js",
+    "build-production": "webpack -w client/index.js --mode production"
   },
   "dependencies": {
     "@feathersjs/configuration": "^1.0.2",
@@ -40,12 +44,16 @@
     "mithril-stream": "^1.1.0",
     "serve-favicon": "^2.5.0",
     "spectre.css": "^0.5.1",
+    "webpack-cli": "^2.0.15",
     "winston": "^2.4.2"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
+    "hard-source-webpack-plugin": "^0.6.4",
     "mocha": "^5.1.1",
     "request": "^2.85.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "webpack": "^4.6.0",
+    "webpack-visualizer-plugin": "^0.1.11"
   }
 }

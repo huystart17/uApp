@@ -2,7 +2,6 @@ let path = require("path");
 const webpack = require("webpack");
 
 var Visualizer = require('webpack-visualizer-plugin');
-//const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 
 //let mix = require('laravel-mix').mix;
@@ -23,6 +22,6 @@ module.exports = {
             filename: "./statistics.html"
         })
     ],
-    mode: "development",
+    mode: "development"
 
 };
