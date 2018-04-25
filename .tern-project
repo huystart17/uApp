@@ -1,0 +1,23 @@
+{
+    "libs": [
+        "ecma5",
+        "ecma6",
+        "browser",
+        "node",
+        "mithril",
+        "mithril-stream",
+        "is_js",
+        "mongoose"
+    ],
+    "ecmaVersion": 6,
+    "plugins": {
+        "webpack": {
+            "configPath": "./node_modules/webpack/lib/webpack.prod.js"
+        },
+        "node": {
+            "load": true
+        },
+        "jsx":{},
+        "es_modules":true
+    }
+}

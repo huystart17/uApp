@@ -1,0 +1,26 @@
+body{
+  background: #eeeeee
+}
+.header{
+  background:#333333;
+}
+.bg-white{
+  background-color:white;
+}.nav-logo {
+  width: 150px;
+  height: 30px;
+}
+
+.btn-wide {
+  padding-left:20px;
+  padding-right: 20px;
+}
+.header-search {
+  min-width: 200px;
+}
+
+
+/*BORDER UTILITIES*/
+.b-gray{
+  border: .05rem solid #caced7;
+}

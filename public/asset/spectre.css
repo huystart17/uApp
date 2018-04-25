@@ -1,11 +1,11 @@
-/*! Spectre.css v0.5.1 | MIT License | github.com/picturepan2/spectre */
+*! Spectre.css v0.5.1 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
 /* Document ========================================================================== */
 html {
   font-family: sans-serif; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 3 */ 
+  -webkit-text-size-adjust: 100%; /* 3 */
   -ms-text-size-adjust: 100%; /* 3 */
 }
 
@@ -385,7 +385,7 @@ kbd {
   background: #454d5d;
   border-radius: .1rem;
   color: #fff;
-  font-size: .7rem; 
+  font-size: .7rem;
   line-height: 1.2;
   padding: .1rem .15rem;
 }
@@ -501,7 +501,7 @@ dl dd {
 .table {
   border-collapse: collapse;
   border-spacing: 0;
-  text-align: left; 
+  text-align: left;
   width: 100%;
 }
 
@@ -540,9 +540,9 @@ dl dd {
   -moz-appearance: none;
   appearance: none;
   background: #fff;
-  border: .05rem solid #5755d9;
+  border: .05rem solid #caced7;
   border-radius: .1rem;
-  color: #5755d9;
+  color: gray;
   cursor: pointer;
   display: inline-block;
   font-size: .8rem;
@@ -709,7 +709,7 @@ dl dd {
 
 .btn.btn-action {
   padding-left: 0;
-  padding-right: 0; 
+  padding-right: 0;
   width: 1.8rem;
 }
 
@@ -779,7 +779,7 @@ dl dd {
 }
 
 .btn-group.btn-group-block {
-  display: flex; 
+  display: flex;
   display: -ms-flexbox;
 }
 
@@ -840,7 +840,7 @@ legend {
 }
 
 .form-input:focus {
-  border-color: #5755d9; 
+  border-color: #5755d9;
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
@@ -934,7 +934,7 @@ textarea.form-input {
 }
 
 .form-select:focus {
-  border-color: #5755d9; 
+  border-color: #5755d9;
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
@@ -1011,7 +1011,7 @@ textarea.form-input {
 .form-checkbox input:focus + .form-icon,
 .form-radio input:focus + .form-icon,
 .form-switch input:focus + .form-icon {
-  border-color: #5755d9; 
+  border-color: #5755d9;
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
@@ -1028,7 +1028,7 @@ textarea.form-input {
   border: .05rem solid #caced7;
   cursor: pointer;
   display: inline-block;
-  position: absolute; 
+  position: absolute;
   transition: all .2s ease;
 }
 
@@ -1149,7 +1149,7 @@ textarea.form-input {
 }
 
 .input-group {
-  display: flex; 
+  display: flex;
   display: -ms-flexbox;
 }
 
@@ -1219,7 +1219,7 @@ textarea.form-input {
 }
 
 .input-group.input-inline {
-  display: inline-flex; 
+  display: inline-flex;
   display: -ms-inline-flexbox;
 }
 
@@ -1276,7 +1276,7 @@ textarea.form-input {
 .form-radio.is-error input:focus + .form-icon,
 .has-error .form-switch input:focus + .form-icon,
 .form-switch.is-error input:focus + .form-icon {
-  border-color: #e85600; 
+  border-color: #e85600;
   box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
 }
 
@@ -1332,7 +1332,7 @@ input.disabled + .form-icon {
   background: #f0f1f4;
   border-radius: .1rem;
   color: #5b657a;
-  display: inline-block; 
+  display: inline-block;
   line-height: 1.2;
   padding: .1rem .15rem;
 }
@@ -1372,7 +1372,7 @@ code {
   background: #fdf4f4;
   border-radius: .1rem;
   color: #e06870;
-  font-size: 85%; 
+  font-size: 85%;
   line-height: 1.2;
   padding: .1rem .15rem;
 }
@@ -1938,7 +1938,7 @@ video.video-responsive::before {
   display: flex;
   display: -ms-flexbox;
   -ms-flex: 1 0 0;
-  flex: 1 0 0; 
+  flex: 1 0 0;
   -ms-flex-align: center;
 }
 
@@ -1952,7 +1952,7 @@ video.video-responsive::before {
   display: flex;
   display: -ms-flexbox;
   -ms-flex: 0 0 auto;
-  flex: 0 0 auto; 
+  flex: 0 0 auto;
   -ms-flex-align: center;
 }
 
@@ -2003,7 +2003,7 @@ summary.accordion-header::-webkit-details-marker {
   line-height: 1.25;
   margin: 0;
   position: relative;
-  vertical-align: middle; 
+  vertical-align: middle;
   width: 1.6rem;
 }
 
@@ -2346,7 +2346,7 @@ summary.accordion-header::-webkit-details-marker {
   background: #f8f9fa;
   border-radius: .1rem;
   color: #667189;
-  padding: 3.2rem 1.6rem; 
+  padding: 3.2rem 1.6rem;
   text-align: center;
 }
 
@@ -2694,7 +2694,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .popover .card {
-  border: 0; 
+  border: 0;
   box-shadow: 0 .2rem .5rem rgba(69, 77, 93, .3);
 }
 
@@ -2713,7 +2713,7 @@ summary.accordion-header::-webkit-details-marker {
   flex: 1 1 0;
   margin-top: 0;
   min-height: 1rem;
-  position: relative; 
+  position: relative;
   text-align: center;
 }
 
@@ -2832,7 +2832,7 @@ summary.accordion-header::-webkit-details-marker {
 .tile {
   align-content: space-between;
   align-items: flex-start;
-  display: flex; 
+  display: flex;
   display: -ms-flexbox;
   -ms-flex-align: start;
   -ms-flex-line-pack: justify;
@@ -2863,7 +2863,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .tile.tile-centered {
-  align-items: center; 
+  align-items: center;
   -ms-flex-align: center;
 }
 
@@ -2873,7 +2873,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .tile.tile-centered .tile-title,
 .tile.tile-centered .tile-subtitle {
-  margin-bottom: 0; 
+  margin-bottom: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -3150,12 +3150,12 @@ a.text-error:hover {
 }
 
 .d-flex {
-  display: flex; 
+  display: flex;
   display: -ms-flexbox;
 }
 
 .d-inline-flex {
-  display: inline-flex; 
+  display: inline-flex;
   display: -ms-inline-flexbox;
 }
 
