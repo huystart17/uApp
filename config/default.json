@@ -5,5 +5,76 @@
   "paginate": {
     "default": 10,
     "max": 50
-  }
+  },
+  "authentication": {
+    "secret": "008dc76b4d3d53c9473c37054fa1b7132173cc73f065c275ad20cd3edc39c4b535c4197fe21c71c854b1a9562fefea77f878e4ce1ba0701b45ebf9c5cd8598e4f2acdaceb324d05e2f5ef1446bfcc1629b73cdaf37ff54db78a9e20bbb1e762b76df65a86abd686c2ce09e17ecc06eedb95f4aa562afb2ede874228cd374ea8956e8615918ae991a636194711abccb43c35d2cb3683c756bfa8e343301b679b7ecca29273bb817ef21b62dc26d84903c0d0a72689c51750a5e8f6f3220bf957ebee1bc988ad8db171e5b895e8efbf8b9af592160450ef9328a8178dd09fb52267186d0b37681f035712ccd685ef401bf53a0cc4b66f4f8d0ed0aaf14858269ec",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "auth0": {
+      "clientID": "your auth0 client id",
+      "clientSecret": "your auth0 client secret",
+      "successRedirect": "/",
+      "domain": "mydomain.auth0.com"
+    },
+    "google": {
+      "clientID": "your google client id",
+      "clientSecret": "your google client secret",
+      "successRedirect": "/",
+      "scope": [
+        "profile openid email"
+      ]
+    },
+    "facebook": {
+      "clientID": "your facebook client id",
+      "clientSecret": "your facebook client secret",
+      "successRedirect": "/",
+      "scope": [
+        "public_profile",
+        "email"
+      ],
+      "profileFields": [
+        "id",
+        "displayName",
+        "first_name",
+        "last_name",
+        "email",
+        "gender",
+        "profileUrl",
+        "birthday",
+        "picture",
+        "permissions"
+      ]
+    },
+    "github": {
+      "clientID": "your github client id",
+      "clientSecret": "your github client secret",
+      "successRedirect": "/"
+    },
+    "cookie": {
+      "enabled": true,
+      "name": "feathers-jwt",
+      "httpOnly": false,
+      "secure": false
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/u_app"
 }
