@@ -1,9 +1,14 @@
 body{
-  background: #eeeeee
+  background: #eeeeee;
+  font-family:'Roboto'
 }
 .header{
   background:#333333;
 }
+.bg-dark{
+  background:#333333;
+}
+
 .bg-white{
   background-color:white;
 }.nav-logo {
@@ -18,9 +23,35 @@ body{
 .header-search {
   /* min-width: 350px; */
 }
+.navbar-section{
+  flex:auto !important;
+}
 
+.panel {
+  border :  1px solid #d6d6d6;
+}
+
+.mt-3{
+  margin-top : 15px;
+}
+
+.mb-3{
+  margin-bottom : 15px;
+}
+
+.my-3{
+  margin-top : 15px;
+  margin-bottom : 15px;
+}
 
 /*BORDER UTILITIES*/
 .b-gray{
   border: .05rem solid #caced7;
+}
+
+
+.exit {animation:fade-out 0.5s;}
+@keyframes fade-out {
+  from {opacity:1;}
+  to {opacity:0;}
 }
