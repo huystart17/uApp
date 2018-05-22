@@ -30,7 +30,8 @@
     "production": "npm run build-production & nodemon ./src",
     "build-dev": "webpack -w  --dev-tool --debug  --mode development",
     "build-production": "webpack -w  --mode production",
-    "jobs": "node src/jobs/"
+    "jobs": "node src/jobs/",
+    "devploy-public": "firebase deploy"
   },
   "dependencies": {
     "@feathersjs/authentication": "^2.1.5",
@@ -42,11 +43,13 @@
     "@feathersjs/express": "^1.2.2",
     "@feathersjs/feathers": "^3.1.4",
     "@feathersjs/socketio": "^3.2.1",
+    "animejs": "^2.2.0",
     "bss": "^1.1.5",
     "cheerio": "^1.0.0-rc.2",
     "compression": "^1.7.2",
     "cors": "^2.8.4",
     "feathers-mongodb": "^3.0.1",
+    "feathers-mongoose": "^6.1.1",
     "got": "^8.3.1",
     "helmet": "^3.12.0",
     "is_js": "^0.9.0",
@@ -54,12 +57,14 @@
     "mithril-node-render": "^2.3.0",
     "mithril-stream": "^1.1.0",
     "mongodb": "^3.0.7",
+    "mongoose": "^5.0.17",
     "passport-auth0": "^0.6.1",
     "passport-facebook": "^2.1.1",
     "passport-github": "^1.1.0",
     "passport-google-oauth20": "^1.0.0",
     "serve-favicon": "^2.5.0",
     "spectre.css": "^0.5.1",
+    "w3c-xmlhttprequest": "^2.1.2",
     "webpack-cli": "^2.0.15",
     "winston": "^2.4.2",
     "xmlhttprequest": "^1.8.0"
@@ -71,6 +76,8 @@
     "puppeteer": "^1.3.0",
     "request": "^2.85.0",
     "request-promise": "^4.2.2",
+    "signale": "^1.0.1",
+    "tachyons": "^4.9.1",
     "webpack": "^4.6.0",
     "webpack-serve": "^0.3.1",
     "webpack-visualizer-plugin": "^0.1.11"

@@ -10,7 +10,6 @@ const Home = {
                 m('.mt-3', m(ProductListPanel)),
                 m('.mt-3', m(ProductListPanel)),
                 m('.mt-3', m(ProductListPanel)),
-
                 m('.mt-3', m(ProductListPanel)),
             ),
         ),

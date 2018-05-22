@@ -12,8 +12,8 @@ const LayoutOneColumn = {
     },
     view: v =>
         m(
-            '.container',
-            m(Topbar),
+            '',
+            m('.flex.justify-center', m('.outline.w-80', m(Topbar))),
             m(Header),
             m(Slide),
             v.children,

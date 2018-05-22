@@ -1,57 +1,19 @@
-body{
-  background: #eeeeee;
-  font-family:'Roboto'
+.pri {
+  color: #1918AB;
 }
-.header{
-  background:#333333;
+.sec{
+  color:  #3E5790;
 }
-.bg-dark{
-  background:#333333;
-}
-
-.bg-white{
-  background-color:white;
-}.nav-logo {
-  width: 150px;
-  height: 30px;
+.suc{
+  color: #77C327;
 }
 
-.btn-wide {
-  padding-left:20px;
-  padding-right: 20px;
+.bg-pri {
+  background-color: #1918AB;
 }
-.header-search {
-  /* min-width: 350px; */
+.bg-sec{
+  background-color:  #3E5790;
 }
-.navbar-section{
-  flex:auto !important;
-}
-
-.panel {
-  border :  1px solid #d6d6d6;
-}
-
-.mt-3{
-  margin-top : 15px;
-}
-
-.mb-3{
-  margin-bottom : 15px;
-}
-
-.my-3{
-  margin-top : 15px;
-  margin-bottom : 15px;
-}
-
-/*BORDER UTILITIES*/
-.b-gray{
-  border: .05rem solid #caced7;
-}
-
-
-.exit {animation:fade-out 0.5s;}
-@keyframes fade-out {
-  from {opacity:1;}
-  to {opacity:0;}
+.suc{
+  background-color: #77C327;
 }

@@ -10,7 +10,7 @@ var HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/client/index.js',
-        inline_index: './src/client_inline/index.js',
+        //        inline_index: './src/client_inline/index.js',
     },
     output: {
         filename: '[name].bundle.js',

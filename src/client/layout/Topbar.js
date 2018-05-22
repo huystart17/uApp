@@ -1,5 +1,6 @@
 const m = require('mithril');
 const app = require('../app.js');
+
 const TopBar = {
     oninit: v => {
         v.state.links = [app.links.home, app.links.book, app.links.discount, app.links.lend];
@@ -15,7 +16,8 @@ const TopBar = {
                             {
                                 key: item.href,
                                 href: item.href,
-                                class: item.href === m.route.get() ? 'text-bold bg-white' : 'text-secondary',
+                                class:
+                                    item.href === m.route.get() ? 'text-bold bg-white disabled' : 'text-secondary',
                                 oncreate: m.route.link,
                             },
                             item.text,

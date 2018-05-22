@@ -12,8 +12,7 @@ const APP = {
         lend: link('Thuê thợ', '/lend'),
         book: link('Đặt chỗ', '/book'),
         discount: link('Giảm giá mạnh', '/discount'),
-        login_page: link('Đăng nhập', '/login'),
-        login_modal: link('Đăng nhập', '#login'),
+        login_page: link('Đăng ký', '/register'),
     },
 
     header: {},
@@ -23,7 +22,15 @@ const APP = {
         {src: assetLink('/img/slide/3.png'), text: 'Khuyến mãi 30%'},
     ],
     product: {
-        list: [1, 2, 3, 4, 5, 6],
+        list: [
+            {name: '1', subtitle: 'Giảm giá 10%'},
+            {name: '2'},
+            {name: '3'},
+            {name: '4'},
+            {name: '5'},
+            {name: '6'},
+            {name: '7'},
+        ],
         options: {
             page: 1,
             total: 10,
