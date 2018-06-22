@@ -1,28 +1,60 @@
 const m = require('mithril');
 const s = require('mithril-stream');
+const a = require('animejs');
+const is = require('is_js');
 const Modal = {
     oninit: v => {
-        v.state.show = s(v.attrs.show);
-        v.state.header = v.attrs.header || 'Modal header';
+        v.attrs = v.attrs || {};
+        if (is.undefined(v.attrs.is_show)) {
+            v.attrs.is_show = true;
+        }
+        let doToggle = v.attrs.doToggle;
     },
 
-    onbeforeremove: v => {
-        v.dom.classList.add('exit');
-        return new Promise(function(resolve) {
-            setTimeout(resolve, 500);
-        });
+    view: v => {
+        let is_show = is.not.undefined(v.attrs.is_show) ? v.attrs.is_show : v.state.is_show;
+        return m(
+            '.my-modal',
+            {
+                style: {
+                    top: 0,
+                    justifyContent: 'center',
+                    paddingTop: '100px',
+                    display: v.attrs.toggle ? 'flex' : 'none',
+                    background: 'rgba(192,192,192,0.8)',
+                    position: 'fixed',
+                    height: '100%',
+                    width: '100%',
+                    zIndex: 9999,
+                },
+                onclick: v.attrs.doToggle,
+            },
+            m('', {}),
+            m(
+                '',
+                {
+                    style: {
+                        minWidth: '20%',
+                        minHeight: '20%',
+                        position: 'absolute',
+                        backgroundColor: 'white',
+                        zIndex: 9999,
+                    },
+                    onclick: e => {
+                        e.stopPropagation();
+                    },
+                },
+                m('i.far.fa-times-circle.f4.pa1', {
+                    style: {
+                        position: 'absolute',
+                        top: 0,
+                        right: 0,
+                    },
+                    onclick: v.attrs.doToggle,
+                }),
+                v.children,
+            ),
+        );
     },
-    view: v =>
-        m(".modal[id='login'].modal-overlay" + (v.state.show() ? '.active' : ''), [
-            m("a.modal-overlay[aria-label='Close'][href='#close']"),
-            m('.modal-container', [
-                m('.modal-header', [
-                    m("a.btn.btn-clear.float-right[aria-label='Close'][href='#close']"),
-                    m('.modal-title.h5', v.state.header),
-                ]),
-                m('.modal-body', m('.content', v.children)),
-                //                m('.modal-footer', '...'),
-            ]),
-        ]),
 };
 module.exports = Modal;

@@ -1,0 +1,24 @@
+{
+  "apps": [
+    {
+      "name": "u-api",
+      "script": "src",
+      "watch": [
+        "src"
+      ],
+      "ignore_watch": [
+        "node_modules",
+        "public",
+        "docs",
+        "test",
+        "website"
+      ],
+      "watch_options": {
+        "followSymlinks": false
+      },
+      "env": {
+        "NODE_ENV": "PRODUCTION"
+      }
+    }
+  ]
+}

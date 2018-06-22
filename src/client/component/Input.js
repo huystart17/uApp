@@ -6,6 +6,7 @@ const Input = {
         v.attrs = v.attrs || {};
 
         v.attrs.class = v.attrs.class || '';
+
         if (v.attrs.isBlock == true) {
             v.attrs.class = v.attrs.class + ' db w-100 f6 ';
         }

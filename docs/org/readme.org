@@ -1,8 +1,0 @@
-* Structure client-folder
-** Layout  - Chứa các thành phần bố cục
-** Entity  - Chứa view và logic của các đối tượng
-** Component - Chứa các component view tạo sắn không phụ thuộc vào thự thể nào cả
-** app.js - chứa thông tin của ứng dụng
-** route.js - tất cả các route sẽ nằm ở đây
-** api_config - chứa các route để call api
-** config.js - Chứa config của app

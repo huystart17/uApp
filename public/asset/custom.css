@@ -1,19 +1,52 @@
 .pri {
-  color: #1918AB;
+    color: #1918AB;
 }
-.sec{
-  color:  #3E5790;
+
+.sec {
+    color: #3E5790;
 }
-.suc{
-  color: #77C327;
+
+.suc {
+    color: #77C327;
 }
 
 .bg-pri {
-  background-color: #1918AB;
+    background-color: #1918AB;
 }
-.bg-sec{
-  background-color:  #3E5790;
+
+.bg-sec {
+    background-color: #3E5790;
 }
-.suc{
-  background-color: #77C327;
+
+.suc {
+    background-color: #77C327;
+}
+
+@keyframes myslide {
+
+    0% {
+        -webkit-transform: translateX(0);
+    }
+
+    10% {
+        -webkit-transform: translateX(-300px);
+    }
+    40% {
+        -webkit-transform: translateX(-300px)
+    }
+    50% {
+        -webkit-transform: translateX(-600px)
+    }
+    60% {
+        -webkit-transform: translateX(-300px)
+    }
+    90%{
+        -webkit-transform:  translateX(-300px)
+    }
+
+
+}
+
+.myslide {
+    animation: myslide 20s linear infinite
 }

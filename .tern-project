@@ -8,6 +8,7 @@
         "mithril-stream",
         "is_js",
         "bss",
+        "faker",
       "mongoose",
       "bss"
     ],

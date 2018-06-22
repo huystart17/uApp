@@ -19,8 +19,9 @@ module.exports = {
     plugins: [
         new HardSourceWebpackPlugin(),
         // new Visualizer({
-        //     filename: "./statistics.html"
-        // })
+        //     filename: './statistics.html',
+        //  }),
     ],
     mode: 'development',
+    //mode: 'production',
 };
